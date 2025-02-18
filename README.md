@@ -1,50 +1,26 @@
-# React + TypeScript + Vite
+##### React Typescript Todo List Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#### Demonstration
 
-Currently, two official plugins are available:
+Adding new Tasks
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![addingTask-ezgif com-crop](https://github.com/user-attachments/assets/0eb675a3-8655-4054-be08-18518544d281)
 
-## Expanding the ESLint configuration
+![image](https://github.com/user-attachments/assets/ba86eab9-350b-4240-8346-49e37c33aad3)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Editing Existing Tasks
 
-- Configure the top-level `parserOptions` property like this:
+![EditingTask-ezgif com-crop](https://github.com/user-attachments/assets/e8474c7c-8560-495a-a963-9b5e558f9ec2)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+![image](https://github.com/user-attachments/assets/88101384-c5cb-409a-ac14-a481d84dcba8)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Deleting Tasks
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+![DeletingTask-ezgif com-crop](https://github.com/user-attachments/assets/8f5bb059-f382-4916-bd81-2f56d38ca47c)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+If tried to add a task with empty title
+
+![image](https://github.com/user-attachments/assets/3f1add54-bf56-41dd-aa68-4f8b926d3226)
+
+
+all Tasks are stored in localstorage
